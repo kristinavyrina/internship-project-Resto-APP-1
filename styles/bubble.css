@@ -1,0 +1,55 @@
+.bubble {
+  background: var(--color-black);
+}
+
+.bubble-inner {
+  max-width: var(--content-width);
+  margin-inline: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+}
+
+.bubble__text {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-semiBold);
+  line-height: var(--line-height-base);
+  color: var(--color-white);
+}
+
+.bubble-button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: var(--color-dark-gray);
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.bubble-button svg {
+  display: block;
+  align-items: center;
+  color: var(--color-white);
+  transition: color 0.2s ease;
+}
+
+.bubble-button:hover {
+  background-color: var(--color-white);
+}
+
+.bubble-button:hover svg {
+  color: var(--color-black);
+}
+
+.bubble.invisible {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  height: 0;
+  padding: 0;
+  margin: 0;
+}

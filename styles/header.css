@@ -1,0 +1,125 @@
+header {
+  background: var(--gradient-header);
+  color: var(--color-gray);
+}
+
+.header-inner {
+  max-width: var(--content-width);
+  margin-inline: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 64px;
+}
+
+.header-logo {
+  display: block;
+  color: #1c1c1c;
+}
+
+.logo-image {
+  display: block;
+}
+
+.header-menu {
+  margin-left: 181px;
+}
+
+.header-contacts {
+  margin-left: 181px;
+}
+
+.header-button {
+  margin-left: 64px;
+}
+
+.header-menu__list {
+  padding: 8px 0;
+  display: flex;
+  gap: 24px;
+}
+
+.header-menu__link {
+  display: block;
+  color: inherit;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semiBold);
+}
+
+.header-menu__link:hover,
+.header-contacts__phone:hover {
+  color: var(--color-black);
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  align-items: end;
+}
+
+.header-contacts__phone {
+  color: inherit;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-semiBold);
+}
+
+.header-contacts__time {
+  margin: 0;
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-16);
+  letter-spacing: 0;
+}
+
+.header-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+
+  border: 2px solid var(--color-black);
+}
+
+.icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.personal-account {
+  background-color: transparent;
+  color: var(--color-black);
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.personal-account:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.icon-basket {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.icon-basket:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 2px solid var(--color-white);
+}
+
+.icon:hover {
+  transform: scale(1.03);
+}
